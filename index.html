@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta property="og:title" content="혼다 코리아">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://sunw9595.dothome.co.kr/">
+    <meta property="og:image" content="http://sunw9595.dothome.co.kr/images/thumb.jpg">
+    <meta property="og:description" content="혼다코리아 웹 사이트 (2020ver)">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8ab9121dfa390395b023df7de377ec7b"></script>
+    <title>혼다 코리아</title>
 </head>
 <body>
+    <h1 class="notext">혼다코리아</h1>
+    <div class="wrapper">
+        <div id="header">
+            <div class="cf_video">
+                <video src="video/video.mp4" controls autoplay="true" muted></video>
+            </div>
+                <!------비디오삽입
+                1. 유튜브, 스트리밍 서비스를 이용
+                2. 자체호스팅/스트리밍/서버운용
+                3. 파일로 직접-->
+                <div class="logo">
+                <a href="#">
+                    <img src="images/logo.gif" alt="혼다코리아">
+                </a>
+            </div>
+        </div>
+        <div class="aside">
+            <ul id="list">
+                <li>
+                    <figure>
+                        <img src="images/car_logo.gif" at="혼다 코리아">
+                        <figcaption class="notext">혼다코리아</figcaption>
+                    </figure>
+                    <p>혼다자동차</p>
+                    <figure>
+                        <img src="images/car_img.jpg" alt="혼다모터스">
+                        <figcaption class="notext">혼다모터스</figcaption>
+                    </figure>
+                    <p>혼다모터스</p>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/moto_logo.gif" alt="혼다모터스">
+                        <figcaption class="notext">혼다모터스</figcaption>
+                    </figure>
+                    <p>혼다모터스</p>
+                    <figure>
+                        <img src="images/moto_img.jpg" alt="혼다모터스">
+                        <figcaption class="notext">혼다모터스</figcaption>
+                    </figure>
+                    <p>혼다모터스</p>
+                </li>
+            </ul>
+        </div>
+        <div class="honda_map">
+            <!------------ 여기 구글지도------------->
+            <div id="map"></div>
+            <script>
+                var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                    mapOption = { 
+                        center: new kakao.maps.LatLng(37.507699, 127.062180), // 지도의 중심좌표
+                        level: 3 // 지도의 확대 레벨
+                    };
     
+                var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+    
+                // 마커가 표시될 위치입니다 
+                var markerPosition  = new kakao.maps.LatLng(37.507699, 127.062180); 
+    
+                // 마커를 생성합니다
+                var marker = new kakao.maps.Marker({
+                    position: markerPosition
+                });
+    
+                // 마커가 지도 위에 표시되도록 설정합니다
+                marker.setMap(map);
+    
+                // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                // marker.setMap(null);  
+            </script>
+            <!--------끝------------>
+        </div>
+        <div id="footer">
+            <div class="footer_logo">
+                <a href="#">
+                    <img src="images/footer_logo.gif" alt="혼다코리아">
+                </a>
+            </div>
+            <p class="copy_info">
+                copyright&copy; 2020. honda korea. all rights reserved.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
