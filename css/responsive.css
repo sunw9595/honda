@@ -1,0 +1,64 @@
+@media screen and (max-width:412px){
+    .wrapper {
+        width:100%;
+        overflow:hidden;
+    }
+    h1.notext{
+        display:block;
+        text-align: center;
+        font-size:2rem;
+        position: absolute;
+        top:20px;
+        left:50%;
+        color:#fff;
+        transform:translateX(-50%);
+    }
+    #header .cf_video {
+        width:100%;
+        float:none;
+    }
+    .cf_video video {
+        width:100%;
+        height:380px;
+    }
+    #header .main_logo {
+        display:none;
+    }
+    #list li {
+        overflow:hidden;
+    }
+    #list li figure:nth-of-type(2) img{
+        max-width: 100%;
+    }
+    #map {
+        width:100%;
+    }
+    .traffic {
+        margin:0 10px;
+    }
+    .traffic li {
+        line-height:1.5;
+        box-sizing:border-box;
+        padding:20px 0 20px 100px;
+        margin:10px 0;
+        font-size:1.250rem;
+        white-space:wrap;
+
+    }
+    .traffic li:nth-child(3){
+        padding:10px 0 10px 100px;
+    }
+    .footer_logo {
+        float:none;
+        margin-top:0;
+        text-align: center;
+    }
+    .copy_info {
+        float:right;
+        text-align: center;
+        text-transform: uppercase;
+        line-height:1.5;
+        background: #333;
+        color:#fbfbfb;
+    }
+}
